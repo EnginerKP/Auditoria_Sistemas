@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auditoría de Sistemas de Información</title>
+<link rel="stylesheet" href="styleExposicion.css">
+</head>
+<body>
+
+<nav>
+  <span class="logo">AUDITORÍA DE SISTEMAS DE INFORMACIÓN</span>
+  <div class="nav-links">
+    <a href="#inicio" class="active">Inicio</a>
+    <a href="#fundamentos">Fundamentos</a>
+    <a href="#normativo">Normativo</a>
+    <a href="#riesgos">Riesgos</a>
+    <a href="#controles">Controles</a>
+    <a href="#hallazgos">Hallazgos</a>
+    <a href="#casos">Casos</a>
+  </div>
+</nav>
+
+<!-- Inicio -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Auditoría<br><span>Basada en Riesgos</span></h1>
+      <p class="sub">Fundamentos, marco normativo colombiano, identificación y evaluación de riesgos, controles y casos prácticos.</p>
+      <div class="tags">Integrantes: 
+        <span class="tag">Deimis A. Henao Echavarria</span>
+        <span class="tag">Juan G. Rodriguez Mena</span>
+        <span class="tag">Juan J. Payares Cisneros</span>
+        <span class="tag">Kevin A. Parra Payares</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUNDAMENTOS -->
+<section class="bg-white-section" id="fundamentos">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2>Fundamentos</h2>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>¿Qué es la Auditoría de Sistemas de Información?</h3>
+        <p>Revisión independiente y sistemática de los <strong>procesos, controles, políticas, infraestructura y aplicaciones tecnológicas</strong> de una organización para verificar si protegen adecuadamente la información y apoyan los objetivos del negocio.</p>
+        <br>
+        <h3 style="color:var(--teal)">Auditoría Financiera vs. Auditoría TI</h3>
+        <p>La financiera verifica si <em>los números son correctos</em>; la de TI verifica si el <strong>sistema que produce esos números es confiable, seguro y trazable</strong>.</p>
+      </div>
+      <div class="card accent-orange">
+        <h3>Objetivos</h3>
+        <div class="cia-item">
+          <div class="cia-dot"></div>
+          <div>
+            <strong>Confidencialidad</strong>
+            <span>Los datos solo los accede a quien corresponde.</span>
+          </div>
+        </div>
+        <div class="cia-item">
+          <div class="cia-dot"></div>
+          <div>
+            <strong>Integridad</strong>
+            <span>No se alteran sin autorización.</span>
+          </div>
+        </div>
+        <div class="cia-item">
+          <div class="cia-dot"></div>
+          <div>
+            <strong>Disponibilidad</strong>
+            <span>Información accesible cuando se necesita.</span>
+          </div>
+        </div>
+        <br>
+        <p style="font-size:.82rem;color:var(--text-mid)">"La DIAN orienta su gestión explícitamente hacia confidencialidad, integridad, disponibilidad y <strong>privacidad</strong>."</p>
+      </div>
+    </div>
+
+    <div stile="margin-top:2rem">
+      <div class="section-header" style="margin-bottom:1.25rem">
+        <div class="section-num" style="background:var(--teal)">1.1</div>
+        <h2>Auditaria Basada en Riesgos</h2>
+      </div>
+      <div class="card">
+        <h3>¿Qué es la Auditoría Basada en Riesgos?</h3>
+        <p>Esta auditoría prioriza y enfoca sus esfuerzos en las <strong>áreas y procesos</strong> que presentan mayor riesgo para una organización. </p>
+        <br>
+        <h3 style="color:var(--teal)">¿Es esencial el ABR?</h3>
+        <p>Es una respuesta esencial a un entorno empresarial en constante evolución. Al adoptar la <strong>ABR</strong>, las organizaciones no solo se aseguran de abordar los riesgos más críticos.</p>
+      </div>
+    </div>
+
+    <!-- Risk concept -->
+    <div style="margin-top:2rem">
+      <div class="section-header" style="margin-bottom:1.25rem">
+        <div class="section-num" style="background:var(--deep)">1.2</div>
+        <h2>Concepto de Riesgo en TI</h2>
+      </div>
+      <div class="formula">Riesgo = Probabilidad × Impacto</div>
+      <div class="grid-3">
+        <div class="risk-col">
+          <div class="risk-col-header" style="background:var(--deep)">Activos</div>
+          <div class="risk-col-body">
+            <ul>
+              <li>Base de datos crítica</li>
+              <li>Aplicación transaccional</li>
+              <li>Servidor de producción</li>
+              <li>Información de usuarios</li>
+            </ul>
+          </div>
+        </div>
+        <div class="risk-col">
+          <div class="risk-col-header" style="background:var(--teal)">Amenazas</div>
+          <div class="risk-col-body">
+            <ul>
+              <li>Ransomware / malware</li>
+              <li>Fraude interno</li>
+              <li>Error humano</li>
+              <li>Fallo de proveedor</li>
+            </ul>
+          </div>
+        </div>
+        <div class="risk-col">
+          <div class="risk-col-header" style="background:#028090">Vulnerabilidades</div>
+          <div class="risk-col-body">
+            <ul>
+              <li>Contraseñas débiles</li>
+              <li>Falta de parches</li>
+              <li>Sin segregación de funciones</li>
+              <li>Backups no probados</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NORMATIVO -->
+<section class="bg-dark-section" id="normativo">
+  <div class="container">
+    <div class="section-header" style="background:#0a1520;border-left-color:var(--teal-light)">
+      <div class="section-num">2</div>
+      <h2>Marco Normativo Colombiano</h2>
+    </div>
+    <div class="grid-3" style="gap:1rem">
+      <div class="norm-card">
+        <a href="Normas/Ley_1581_de_2012.pdf">Ley 1581 / 2012</a>
+        <p>Régimen general de protección de datos personales. Reconoce derechos de los titulares sobre sus datos.</p>
+      </div>
+      <div class="norm-card">
+        <a href="Normas/Decreto_1377_de_2013.pdf">Decreto 1377 / 2013</a>
+        <p>Reglamenta autorización, políticas de tratamiento, ejercicio de derechos, transferencias internacionales y responsabilidad demostrada.</p>
+      </div>
+      <div class="norm-card" style="border-left-color:var(--accent)">
+        <a href="Normas/norma-ISO-27001_2022_NOEDER.pdf">ISO/IEC 27001:2022</a>
+        <p>SGSI internacional: evaluación y tratamiento del riesgo, controles y mejora continua.</p>
+      </div>
+      <div class="norm-card" style="border-left-color:var(--accent)">
+        <a href="Normas/COBIT2019-IAIA.pdf">COBIT 2019</a>
+        <p>Marco de gobierno y gestión de TI. Alinea tecnología, valor, riesgo y desempeño.</p>
+      </div>
+      <div class="norm-card">
+        <a href="Normas/articles-5482_G15_Auditoria.pdf">MinTIC / MSPI</a>
+        <p>Guías de gobierno digital y seguridad de la información para entidades públicas colombianas.</p>
+      </div>
+      <div class="norm-card">
+        <h4>Reguladores Clave</h4>
+        <p><strong style="color:var(--teal-light)"><a href="https://www.sic.gov.co/" target="_blank">SIC</a></strong> – datos personales &nbsp;·&nbsp; <strong style="color:var(--teal-light)"><a href="https://www.superfinanciera.gov.co/" target="_blank">SFC</a></strong> – sector financiero &nbsp;·&nbsp; <strong style="color:var(--teal-light)"><a href="https://www.dian.gov.co/" target="_blank">DIAN</a></strong> / <strong style="color:var(--teal-light)"><a href="https://www.dane.gov.co/" target="_blank">DANE</a></strong> – sector público con ISO 27001.</p>
+      </div>
+    </div>
+
+    <!-- Obligations table -->
+    <div style="margin-top:2rem;overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;border-radius:8px;overflow:hidden">
+        <thead>
+          <tr style="background:var(--teal)">
+            <th style="padding:.75rem 1rem;text-align:left;color:#fff;font-size:.9rem">Tipo de Entidad</th>
+            <th style="padding:.75rem 1rem;text-align:left;color:#fff;font-size:.9rem">Enfoque Principal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#0a1520">
+            <td style="padding:.65rem 1rem;color:var(--teal-light);font-weight:700;font-size:.9rem">Financiera</td>
+            <td style="padding:.65rem 1rem;color:var(--light-gray);font-size:.85rem">Seguridad, continuidad, trazabilidad, gestión de riesgos tecnológicos, cumplimiento instrucciones SFC.</td>
+          </tr>
+          <tr style="background:#0d1f2d">
+            <td style="padding:.65rem 1rem;color:var(--teal-light);font-weight:700;font-size:.9rem">Pública</td>
+            <td style="padding:.65rem 1rem;color:var(--light-gray);font-size:.85rem">Gobierno digital, seguridad de la información, gestión de incidentes y auditoría de sistemas con evidencia documental.</td>
+          </tr>
+          <tr style="background:#0a1520">
+            <td style="padding:.65rem 1rem;color:var(--teal-light);font-weight:700;font-size:.9rem">Privada</td>
+            <td style="padding:.65rem 1rem;color:var(--light-gray);font-size:.85rem">Protección de datos personales, seguridad operativa, continuidad, gestión de riesgos y cumplimiento sectorial.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- RIESGOS -->
+<section class="bg-white-section" id="riesgos">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2>Identificación de Riesgos</h2>
+    </div>
+    <div class="grid-2">
+      <!-- Matrix -->
+      <div>
+        <h3 style="color:var(--navy);margin-bottom:1rem;font-size:1.05rem">Matriz de Calor</h3>
+        <div class="matrix-wrap">
+          <img src="Ilustraciones/Matriz_Calor.png" alt="Matriz de Calor">
+        </div>
+        <div style="margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap">
+          <span style="background:#18a540;color:#fff;padding:.2rem .7rem;border-radius:12px;font-size:.75rem;font-weight:600">Bajo</span>
+          <span style="background:#e0e316;color:#fff;padding:.2rem .7rem;border-radius:12px;font-size:.75rem;font-weight:600">Medio</span>
+          <span style="background:#c05621c5;color:#fff;padding:.2rem .7rem;border-radius:12px;font-size:.75rem;font-weight:600">Alto</span>
+          <span style="background:#991B1B;color:#fff;padding:.2rem .7rem;border-radius:12px;font-size:.75rem;font-weight:600">Crítico</span>
+        </div>
+      </div>
+      
+      <div>
+        <img src="Ilustraciones/Matriz_Dofa.png" alt="Matriz DOFA" style="width:100%;border-radius:8px">
+      </div>
+      <!-- Risk types + residual -->
+      <div class="card">
+        <h3>Tipos de Riesgo</h3>
+        <div style="margin-top:.75rem">
+          <div class="timeline-item">
+            <div class="timeline-bar" style="background:var(--deep);min-height:50px"></div>
+            <div class="timeline-content">
+              <strong>Técnicos</strong>
+              <p>Software, infraestructura y configuraciones.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-bar" style="background:var(--teal);min-height:50px"></div>
+            <div class="timeline-content">
+              <strong>Operacionales</strong>
+              <p>Procesos y personas.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-bar" style="background:var(--warning);min-height:50px"></div>
+            <div class="timeline-content">
+              <strong>Cumplimiento</strong>
+              <p>Normas legales y regulatorias.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-bar" style="background:var(--danger);min-height:50px"></div>
+            <div class="timeline-content">
+              <strong>Estratégicos</strong>
+              <p>Decisiones de continuidad y valor del negocio.</p>
+            </div>
+          </div>
+        </div>
+        <div style="background:var(--navy);border-radius:6px;padding:.75rem 1rem;margin-top:.75rem;text-align:center;font-size:.85rem;color:var(--light-gray)">
+          <strong style="color:var(--white)">Riesgo Inherente</strong> (sin controles) &nbsp;→&nbsp; <strong style="color:var(--teal-light)">Riesgo Residual</strong> (con controles)
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTROLES -->
+<section class="bg-dark-section" id="controles">
+  <div class="container">
+    <div class="section-header" style="background:#0a1520;border-left-color:var(--teal-light)">
+      <div class="section-num">4</div>
+      <h2>Evaluación de Controles</h2>
+    </div>
+    <div class="grid-3">
+      <div class="control-card">
+        <div class="control-card-header" style="background:var(--success)">Preventivos</div>
+        <div class="control-card-body">
+          <p>Evitan que los incidentes ocurran. Diseñados para bloquear amenazas antes de que generen impacto.</p>
+          <div class="example-label">Ejemplo</div>
+          <div class="example-value">Autenticación multifactor (MFA)</div>
+        </div>
+      </div>
+      <div class="control-card">
+        <div class="control-card-header" style="background:var(--warning)">Detectivos</div>
+        <div class="control-card-body">
+          <p>Identifican incidentes cuando ocurren. Permiten detección temprana y respuesta ágil.</p>
+          <div class="example-label">Ejemplo</div>
+          <div class="example-value">Monitoreo y revisión de logs</div>
+        </div>
+      </div>
+      <div class="control-card">
+        <div class="control-card-header" style="background:var(--danger)">Correctivos</div>
+        <div class="control-card-body">
+          <p>Ayudan a recuperarse y corregir la causa raíz después de un incidente.</p>
+          <div class="example-label">Ejemplo</div>
+          <div class="example-value">Restauración desde backup</div>
+        </div>
+      </div>
+    </div>
+    <div style="background:#0a1520;border-radius:8px;padding:1rem 1.5rem;margin-top:1.5rem;border-left:4px solid var(--teal)">
+      <p style="color:var(--light-gray);font-size:.9rem;font-style:italic">
+        Un control evalúa tres dimensiones: <strong style="color:var(--white)">Suficiencia</strong> (¿cubre el riesgo?), <strong style="color:var(--white)">Diseño</strong> (¿está bien construido?) y <strong style="color:var(--white)">Aplicación práctica</strong> (¿opera con evidencia verificable?). Un control en papel puede fallar si no hay monitoreo ni responsables claros.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- HALLAZGOS -->
+<section class="bg-white-section" id="hallazgos">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2>Hallazgos Típicos y Recomendaciones</h2>
+    </div>
+    <div class="grid-2">
+      <div class="card accent-danger">
+        <h3>Hallazgos Frecuentes</h3>
+        <div style="margin-top:.75rem">
+          <div class="finding-item"><div class="finding-dot"></div><span>Contraseñas compartidas o débiles</span></div>
+          <div class="finding-item"><div class="finding-dot"></div><span>Falta de segregación de funciones</span></div>
+          <div class="finding-item"><div class="finding-dot"></div><span>Sistemas sin parches de seguridad</span></div>
+          <div class="finding-item"><div class="finding-dot"></div><span>Backups inexistentes o no probados</span></div>
+          <div class="finding-item"><div class="finding-dot"></div><span>Ausencia de políticas de seguridad documentadas</span></div>
+          <div class="finding-item"><div class="finding-dot"></div><span>Logs incompletos o sin revisión periódica</span></div>
+        </div>
+        <div style="margin-top:1rem">
+          <p style="font-size:.82rem;font-weight:700;color:var(--navy);margin-bottom:.5rem">Clasificación de Severidad</p>
+          <div style="display:flex;gap:.4rem;flex-wrap:wrap">
+            <span style="background:#991B1B;color:#fff;padding:.2rem .7rem;border-radius:12px;font-size:.75rem;font-weight:600">Crítico</span>
+            <span style="background:#C05621;color:#fff;padding:.2rem .7rem;border-radius:12px;font-size:.75rem;font-weight:600">Alto</span>
+            <span style="background:#D97706;color:#fff;padding:.2rem .7rem;border-radius:12px;font-size:.75rem;font-weight:600">Medio</span>
+            <span style="background:#065F46;color:#fff;padding:.2rem .7rem;border-radius:12px;font-size:.75rem;font-weight:600">Bajo</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Plan de Acción</h3>
+        <div style="margin-top:.75rem">
+          <div class="timeline-item">
+            <div class="timeline-bar" style="background:var(--danger);min-height:65px"></div>
+            <div class="timeline-content">
+              <strong>Corto Plazo</strong>
+              <p>Corregir accesos críticos · Activar backups · Aplicar parches urgentes · Documentar responsables.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-bar" style="background:var(--warning);min-height:65px"></div>
+            <div class="timeline-content">
+              <strong>Mediano Plazo</strong>
+              <p>Formalizar matriz de riesgos · Mejorar segregación de funciones · Pruebas de recuperación · Cerrar brechas normativas.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-bar" style="background:var(--success);min-height:65px"></div>
+            <div class="timeline-content">
+              <strong>Largo Plazo</strong>
+              <p>Madurar SGSI · Integrar auditoría continua · Automatizar controles · Alinear con COBIT 2019 e ISO/IEC 27001:2022.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASOS DE ESTUDIO -->
+<section class="bg-dark-section" id="casos">
+  <div class="container">
+    <div class="section-header" style="background:#0a1520;border-left-color:var(--teal-light)">
+      <div class="section-num">6</div>
+      <h2>Casos de Estudio: Auditoría en <em style="color:var(--accent);font-style:normal">TecnoSeguro</em></h2>
+    </div>
+ 
+    <!-- Contexto -->
+    <div class="ts-context">
+      <div class="ts-context-icon">☁️</div>
+      <div>
+        <h4>Contexto de la Empresa</h4>
+        <p><strong style="color:var(--white)">TecnoSeguro</strong> ha migrado el <strong style="color:var(--teal-light)">80 % de sus servicios a la nube</strong>, pero reportó <strong style="color:var(--teal-light)">dos incidentes de indisponibilidad</strong> en el último trimestre, afectando la atención al cliente y generando riesgos de cumplimiento normativo. El objetivo de esta auditoría es evaluar el <strong style="color:var(--white)">SGSI y la continuidad operativa</strong> para mitigar interrupciones y pérdida de datos.</p>
+      </div>
+    </div>
+ 
+    <!-- Etapas accordion -->
+    <div class="ts-stages">
+ 
+      <!-- Etapa 1 -->
+      <div class="ts-stage open" id="stage1">
+        <div class="ts-stage-header" onclick="toggleStage('stage1')">
+          <div class="ts-stage-num">1</div>
+          <span class="ts-stage-title">Planificación y Entendimiento del Negocio</span>
+          <span class="ts-chevron">▼</span>
+        </div>
+        <div class="ts-stage-body">
+          <p style="font-size:.88rem;color:var(--light-gray);margin-bottom:.85rem">Se identifican los activos críticos y se establecen los riesgos clave que guiarán todo el trabajo de auditoría.</p>
+          <div class="ts-risk-list">
+            <div class="ts-risk-item">
+              <span class="ts-badge badge-alto">Activo</span>
+              <p><strong style="color:var(--white)">Base de datos de clientes</strong> — repositorio central con información personal y transaccional.</p>
+            </div>
+            <div class="ts-risk-item">
+              <span class="ts-badge badge-alto">Activo</span>
+              <p><strong style="color:var(--white)">Sistema de atención al cliente</strong> — plataforma migrada a la nube con dos incidentes de indisponibilidad recientes.</p>
+            </div>
+            <div class="ts-risk-item">
+              <span class="ts-badge badge-alto">Activo</span>
+              <p><strong style="color:var(--white)">Servidor en la nube</strong> — infraestructura que aloja el 80 % de los servicios operativos.</p>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,.06);margin:.75rem 0"></div>
+            <div class="ts-risk-item">
+              <span class="ts-badge badge-alto">Riesgo</span>
+              <p>Fuga de información de clientes almacenada en la nube sin controles de cifrado adecuados.</p>
+            </div>
+            <div class="ts-risk-item">
+              <span class="ts-badge badge-alto">Riesgo</span>
+              <p>Inoperatividad del sistema por más de 4 horas sin plan de continuidad actualizado.</p>
+            </div>
+            <div class="ts-risk-item">
+              <span class="ts-badge badge-medio">Riesgo</span>
+              <p>Falta de actualización de parches de seguridad en los servicios migrados a la nube.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Etapa 2 -->
+      <div class="ts-stage" id="stage2">
+        <div class="ts-stage-header" onclick="toggleStage('stage2')">
+          <div class="ts-stage-num">2</div>
+          <span class="ts-stage-title">Evaluación de Riesgos — Priorización</span>
+          <span class="ts-chevron">▼</span>
+        </div>
+        <div class="ts-stage-body">
+          <p style="font-size:.88rem;color:var(--light-gray);margin-bottom:.85rem">Los riesgos se priorizan para concentrar el esfuerzo auditor donde el impacto potencial es mayor.</p>
+          <div class="ts-risk-list">
+            <div class="ts-risk-item">
+              <span class="ts-badge badge-alto">Alto</span>
+              <p><strong style="color:var(--white)">Fallo en la autenticación de usuarios</strong> — riesgo de acceso no autorizado a la plataforma y a la base de datos de clientes en la nube.</p>
+            </div>
+            <div class="ts-risk-item">
+              <span class="ts-badge badge-alto">Alto</span>
+              <p><strong style="color:var(--white)">Plan de Recuperación ante Desastres (DRP) no actualizado</strong> tras la migración a la nube — la empresa no puede garantizar la continuidad ante una caída del proveedor cloud.</p>
+            </div>
+            <div class="ts-risk-item">
+              <span class="ts-badge badge-medio">Medio</span>
+              <p><strong style="color:var(--white)">Falta de capacitación en seguridad</strong> al personal nuevo que accede a los sistemas cloud sin entrenamiento formal en buenas prácticas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Etapa 3 -->
+      <div class="ts-stage" id="stage3">
+        <div class="ts-stage-header" onclick="toggleStage('stage3')">
+          <div class="ts-stage-num">3</div>
+          <span class="ts-stage-title">Ejecución de la Auditoría — Pruebas de Control</span>
+          <span class="ts-chevron">▼</span>
+        </div>
+        <div class="ts-stage-body">
+          <p style="font-size:.88rem;color:var(--light-gray);margin-bottom:.85rem">Se aplican tres tipos de pruebas para recopilar evidencia suficiente y competente.</p>
+          <div class="ts-action-list">
+            <div class="ts-action-item">
+              <span class="ts-action-icon">🔍</span>
+              <div>
+                <strong style="color:var(--white);font-size:.88rem">Auditoría técnica</strong>
+                <p style="margin-top:.2rem">Revisión de los logs de acceso al sistema cloud: se verifican intentos fallidos, horarios inusuales y accesos desde IPs no autorizadas.</p>
+              </div>
+            </div>
+            <div class="ts-action-item">
+              <span class="ts-action-icon">📋</span>
+              <div>
+                <strong style="color:var(--white);font-size:.88rem">Revisión documental — entrevista</strong>
+                <p style="margin-top:.2rem">Entrevista al responsable de seguridad de la información para verificar si el DRP contempla los nuevos servicios migrados a la nube y si existe un calendario de ejercicios de simulacro.</p>
+              </div>
+            </div>
+            <div class="ts-action-item">
+              <span class="ts-action-icon">⚡</span>
+              <div>
+                <strong style="color:var(--white);font-size:.88rem">Prueba de continuidad — simulación</strong>
+                <p style="margin-top:.2rem">Se simula una caída del servidor principal en la nube para verificar la eficacia del plan de continuidad: tiempo de activación del sitio alterno, comunicación al equipo de respuesta y recuperación del servicio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Etapa 4 -->
+      <div class="ts-stage" id="stage4">
+        <div class="ts-stage-header" onclick="toggleStage('stage4')">
+          <div class="ts-stage-num">4</div>
+          <span class="ts-stage-title">Resultados y Recomendaciones</span>
+          <span class="ts-chevron">▼</span>
+        </div>
+        <div class="ts-stage-body">
+          <p style="font-size:.88rem;color:var(--light-gray);margin-bottom:.85rem">Los hallazgos se clasifican por severidad y se acompañan de recomendaciones accionables.</p>
+          <div class="ts-findings">
+            <div class="ts-finding-card">
+              <div class="ts-finding-head" style="background:#7f1d1d">
+                <span style="font-size:1rem">⚠️</span>
+                <span>Hallazgo 1 — Riesgo Alto</span>
+              </div>
+              <div class="ts-finding-body">
+                <div class="ts-finding-label">Hallazgo</div>
+                <p class="ts-finding-text">El DRP <strong style="color:#fca5a5">no contemplaba los nuevos servicios en la nube</strong>. Al simular la caída del servidor, el equipo tardó más de 4 horas en activar el plan alterno porque los procedimientos hacían referencia a la infraestructura on-premise anterior.</p>
+                <div class="ts-finding-label">Recomendación</div>
+                <p class="ts-finding-rec">Actualizar el DRP inmediatamente para incluir todos los servicios cloud. Realizar un simulacro formal con métricas de RTO/RPO dentro de los próximos 30 días.</p>
+              </div>
+            </div>
+            <div class="ts-finding-card">
+              <div class="ts-finding-head" style="background:#78350f">
+                <span style="font-size:1rem">🔓</span>
+                <span>Hallazgo 2 — Riesgo Alto</span>
+              </div>
+              <div class="ts-finding-body">
+                <div class="ts-finding-label">Hallazgo</div>
+                <p class="ts-finding-text">Se encontraron <strong style="color:#fcd34d">usuarios activos de empleados que ya no laboran</strong> en la empresa con acceso vigente a los sistemas cloud. Esto representa una superficie de ataque activa y una violación del principio de mínimo privilegio.</p>
+                <div class="ts-finding-label">Recomendación</div>
+                <p class="ts-finding-rec">Deshabilitar de inmediato todas las cuentas identificadas. Implementar una revisión mensual de usuarios y accesos vinculada al proceso de desvinculación de personal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Etapa 5 -->
+      <div class="ts-stage" id="stage5">
+        <div class="ts-stage-header" onclick="toggleStage('stage5')">
+          <div class="ts-stage-num">5</div>
+          <span class="ts-stage-title">Informe Final y Seguimiento</span>
+          <span class="ts-chevron">▼</span>
+        </div>
+        <div class="ts-stage-body">
+          <div class="ts-action-list">
+            <div class="ts-action-item">
+              <span class="ts-action-icon">📄</span>
+              <div>
+                <strong style="color:var(--white);font-size:.88rem">Informe de auditoría emitido</strong>
+                <p style="margin-top:.2rem">El informe incluye los dos hallazgos de riesgo alto, las acciones correctivas acordadas, los responsables asignados y las fechas límite de cumplimiento. Se presenta a la gerencia para decisión y asignación de recursos.</p>
+              </div>
+            </div>
+            <div class="ts-action-item">
+              <span class="ts-action-icon">📅</span>
+              <div>
+                <strong style="color:var(--white);font-size:.88rem">Seguimiento a 3 meses</strong>
+                <p style="margin-top:.2rem">Se acuerda una revisión de seguimiento en 90 días para verificar que los riesgos altos han sido mitigados: DRP actualizado con simulacro ejecutado y cuentas de exempleados deshabilitadas con proceso formal implementado.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /ts-stages -->
+ 
+    <!-- Beneficios -->
+    <div class="ts-benefits">
+      <div class="ts-benefit-card">
+        <div class="ts-benefit-icon">🎯</div>
+        <p><strong style="color:var(--teal-light)">Recursos concentrados</strong> en las áreas de mayor riesgo: nube y gestión de accesos.</p>
+      </div>
+      <div class="ts-benefit-card">
+        <div class="ts-benefit-icon">📊</div>
+        <p><strong style="color:var(--teal-light)">Valor estratégico</strong> para la gerencia: información clara para la toma de decisiones.</p>
+      </div>
+      <div class="ts-benefit-card">
+        <div class="ts-benefit-icon">🛡️</div>
+        <p><strong style="color:var(--teal-light)">Control interno mejorado</strong> con recomendaciones prácticas e implementables.</p>
+      </div>
+    </div>
+ 
+    <!-- Seguimiento -->
+    <div class="ts-followup">
+      <span class="ts-followup-icon">🔄</span>
+      <p>El enfoque basado en riesgos permitió a TecnoSeguro <strong>reducir su exposición al riesgo de indisponibilidad y acceso no autorizado</strong> en un ciclo de auditoría de 3 semanas, con seguimiento formal a los 90 días para verificar el cierre de los hallazgos críticos.</p>
+    </div>
+ 
+  </div>
+</section>
+
+<footer>
+  Auditoría de Sistemas de Información · Basado en Riesgos 
+</footer>
+
+<script src="scriptScroll.js"></script>
+</body>
+</html>
